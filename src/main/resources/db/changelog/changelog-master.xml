@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-2.0.xsd">
+
+    <include file="db/changelog/1.0/ create-productCategory.sql"/>
+    <include file="db/changelog/1.0/create-productInventory.sql"/>
+    <include file="db/changelog/1.0/create-discount.sql"/>
+    <include file="db/changelog/1.0/create-product.sql"/>
+    <include file="db/changelog/1.0/create-order_details.sql"/>
+    <include file="db/changelog/1.0/create-order_items.sql"/>
+    <include file="db/changelog/1.0/create-user.sql"/>
+    <include file="db/changelog/1.0/create-shopping_session.sql"/>
+    <include file="db/changelog/1.0/create-cart_item.sql"/>
+    <include file="db/changelog/1.0/create-payment_details.sql"/>
+    <include file="db/changelog/1.0/create-user_address.sql"/>
+    <include file="db/changelog/1.0/create-user_payment.sql"/>
+</databaseChangeLog>

@@ -1,0 +1,40 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: 123456
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+  liquibase:
+    change-log: classpath:/db/changelog/changelog-master.xml
+    database-change-log-table: liquibase_log
+    database-change-log-lock-table: liquibase_log_lock
+    default-schema: e_commerce_ms
+    enabled: false
+
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: example@gmail.com
+    password: 12345
+    smtp:
+      auth: true
+      starttls:
+        enable: true
+    properties:
+      mail:
+        smtp:
+          starttls:
+            required: true
+
+#        mail.smtp.starttls.enablec   spring.mail.properties.mail.smtp.starttls.required=true
+
+
+
+server:
+  port: 8087
+
